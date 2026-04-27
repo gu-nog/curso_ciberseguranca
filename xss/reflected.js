@@ -15,8 +15,10 @@ app.get("/", (req, res) => {
 
 app.get("/search", (req, res) => {
   const insecure_name = req.query.pergunta;
-  // const name = escapeHtml(insecure_name);
-  res.send(`<h1>Nenhum resultado para ${insecure_name}</h1>`);
+  console.log(insecure_name);
+  const name = escapeHtml(insecure_name);
+  console.log(name);
+  res.send(`<h1>Nenhum resultado para ${name}</h1>`);
 });
 
 app.listen(3000);
