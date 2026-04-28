@@ -37,4 +37,6 @@ app.get("/search", (req, res) => {
   res.send(`<h1>Resultado para: ${query}</h1>`);
 });
 
-app.listen(3000);
+app.listen(3000, () =>
+  console.log("Servidor rodando em http://localhost:3000"),
+);

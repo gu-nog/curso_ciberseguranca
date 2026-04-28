@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aula SQL Injection</title></head>
+<body>
+  <h1>Laboratório de SQL Injection</h1>
+  
+  <h2>1. Login vulnerável</h2>
+  <form action="/login" method="POST">
+    <input type="text" name="username" placeholder="Usuário" /><br/>
+    <input type="password" name="password" placeholder="Senha" /><br/>
+    <button type="submit">Entrar</button>
+  </form>
+
+  <h2>2. Busca de produtos (UNION)</h2>
+  <form action="/produtos" method="GET">
+    <input type="text" name="busca" placeholder="Buscar produto..." /><br/>
+    <button type="submit">Buscar</button>
+  </form>
+</body>
+</html>
