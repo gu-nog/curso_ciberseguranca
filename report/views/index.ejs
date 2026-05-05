@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aula report</title></head>
+<body>
+  <h1>Fakebook</h1>
+
+  <h2>Criar conta</h2>
+  <form action="/signup" method="POST">
+    Usuário: <input name="username"><br>
+    Senha: <input name="password" type="password"><br>
+    <button type="submit">Criar conta</button>
+  </form>
+
+  <h2>Usuários</h2>
+  <ul>
+    <% users.forEach(username => { %>
+      <li><%- username %></li>
+    <% }); %>
+  </ul>
+
+  <h2>Comentar</h2>
+  <form action="/comment" method="POST">
+    Conteúdo: <input name="content"><br>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <h2>Comentários</h2>
+  <ul>
+    <% comments.forEach(comment => { %>
+      <li><%- comment %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>

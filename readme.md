@@ -40,3 +40,10 @@ docker ps
 docker stop {prefixo id}
 docker rm {prefixo id}
 ```
+
+## Execução lab para escrever reports
+
+```bash
+npm install express sqlite3 body-parser ejs escape-html
+node report/app1.js
+```
